@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change Maker</title>
+    
+    <!--Use the script from changeMaker.js-->
+    <script type="text/javascript" src="changeMaker.js"></script>
+    
+    <!--Use the styles from changeMaker.css-->
+    <link rel="stylesheet" href="changeMaker.css">
+</head>
+
+<body>
+    <img src="coins.jpg" alt="American Coins" width="400px">
+    <h1>Change Maker</h1>
+    <p>
+        Enter an amount of change between 1 and 99 and Change Maker will calculate the fewest amount of coins needed to make that change.    
+    </p>
+    <form>
+         Enter the amount of change:
+         <input type="text" name="cents"> 
+         <input type="button" value="Get coins" onclick="CountCoins(cents.value)">
+    </form>
+    <p id="changeDisplay"></p>
+</body>
+</html>
